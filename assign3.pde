@@ -66,10 +66,10 @@ void draw() {
     if(leftPressed){ xFighter -= 15 ; }
     if(rightPressed){ xFighter += 15 ; }
     //boundary detection
-    if (xFighter > 640-fighter.width/2 ) { xFighter = 640-fighter.width/2 ; }
-    if (xFighter < fighter.width/2 ) { xFighter = fighter.width/2 ; }
-    if (yFighter > 480-fighter.height/2 ) { yFighter = 480-fighter.height/2 ; }
-    if (yFighter < fighter.height/2 ) { yFighter = fighter.height/2 ; }
+    if (xFighter > 640-fighter.width ) { xFighter = 640-fighter.width ; }
+    if (xFighter < 0 ) { xFighter = 0 ; }
+    if (yFighter > 480-fighter.height ) { yFighter = 480-fighter.height ; }
+    if (yFighter < 0 ) { yFighter = 0 ; }
         
     //outer space  
     image(outerSpace2,xOuterSpace,0) ;
